@@ -1,4 +1,4 @@
-export const generateSignal = ({ waveform, frequency, amplitude, phase, sampleRate = 1000, duration = 1 }) => {
+export const generateSignal = ({ waveform, frequency, amplitude, phase, sampleRate = 100, duration = 1 }) => {
   // Input validation
   if (!['sine', 'square', 'triangle', 'noise'].includes(waveform)) {
     throw new Error('Invalid waveform type');
